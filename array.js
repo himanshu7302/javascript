@@ -37,3 +37,82 @@ let p=num.push(4)
 console.log(num)
 
 // shift method remove the first element from the array
+// shift method remove the first element from the array
+let q=num.shift()
+console.log(q)
+console.log(num)
+let n=num.unshift(78)// Unshift method is used to add something at starting from the array
+console.log(num)
+console.log(num.length)
+
+
+let num_more=[1,2,3,4,54,34,32,21]
+let num_evenmore=[2,4,6,8,10,12,14]
+console.log(num_more.length)
+delete num_more[0]       // Delete method is used to delete  the first number but length of the array is  
+console.log(num_more)
+console.log(num_more.length)
+
+let newArray=num.concat(num_more,num_evenmore) // Concat method is used to add two strings
+console.log(newArray)
+console.log(num,num_more)
+ 
+// Sort method 
+let compare=(a,b)=>{
+    return a-b
+}
+// Compare function is used to Sort the Array in assending and decending order 
+
+let num7=[551,22,3,14,5,6,7,8,229]
+num7.sort(compare)
+num7.reverse()
+console.log(num7)
+
+
+
+
+//Splice and Slice Method 
+
+let num1=[551,45,56,78,98,76,65]
+// Splice function is used to return the deleted value and modifies the existing array
+num1.splice(2,4,1021,1022,1023,1024)
+console.log(num1)
+
+//Slice method 
+
+let num2=[34,36,38,40,42,44]
+let del=num2.slice(3,5)
+console.log(num2)
+console.log(del)
+
+//loop in an Array
+
+let arr=[2,4,7,8,9]
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i])
+} 
+//For each loop
+arr.forEach((element)=>{
+    console.log(element*element)
+})
+//Array .from 
+let name="Himanshu"
+let arr1=Array.from(name)
+console.log(arr1)
+console.log(typeof arr1)
+
+//For of loop
+
+for(let i of arr){
+    console.log(i)
+}
+
+//for in loop
+
+for(let i in arr){
+    console.log(arr[i])
+
+}
+
+
+
